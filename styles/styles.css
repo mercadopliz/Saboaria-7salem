@@ -4,7 +4,7 @@ body {
     padding: 0;
     background-color: #e0f2f1;
     color: #2e7d32;
-    background-image: url('/image/fundo.jpg');
+    background-image: url('../image/fundo.jpg');
     background-size: cover;
     background-attachment: fixed;
 }
