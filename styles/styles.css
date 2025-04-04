@@ -224,6 +224,29 @@ section {
 }
 
 
+@media (max-width: 1024px) {
+    header {
+        font-size: 24px;
+    }
+
+    nav ul {
+        gap: 15px;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    .produto {
+        padding: 15px;
+    }
+
+    button.comprar {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}
+
 @media (max-width: 768px) {
     nav ul {
         flex-direction: column;
@@ -235,11 +258,39 @@ section {
     }
 
     h2 {
-        font-size: 28px;
+        font-size: 24px;
     }
 
     button.comprar {
         font-size: 14px;
         padding: 8px 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        font-size: 20px;
+        padding: 15px;
+    }
+
+    nav ul {
+        gap: 5px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    .produto {
+        padding: 10px;
+    }
+
+    button.comprar {
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+
+    footer {
+        font-size: 12px;
     }
 }
