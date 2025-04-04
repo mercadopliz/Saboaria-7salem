@@ -75,3 +75,171 @@ footer {
     color: white;
     margin-top: 20px;
 }
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    justify-content: center;
+    padding: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #007BFF;
+    transform: scale(1.1);
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ffcc00;
+    transform: scale(1.1);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+section {
+    opacity: 0;
+    animation: fadeIn 1s ease forwards;
+}
+
+#sobre {
+    animation-delay: 0.2s;
+}
+
+#produtos {
+    animation-delay: 0.4s;
+}
+
+#contato {
+    animation-delay: 0.6s;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.produto {
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 20px;
+    margin: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    width: 300px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.produto:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.produto img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.produto {
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 20px;
+    margin: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    width: 300px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.produto:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.produto img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+button.comprar {
+    background-color: #2e7d32;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button.comprar:hover {
+    background-color: #1b5e20;
+    transform: scale(1.05);
+}
+
+#sobre {
+    animation-delay: 0.2s;
+}
+
+#produtos {
+    animation-delay: 0.4s;
+}
+
+#contato {
+    animation-delay: 0.6s;
+}
+
+section {
+    opacity: 0;
+    animation: fadeIn 1s ease forwards;
+}
+
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .produto {
+        width: 100%;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    button.comprar {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}
