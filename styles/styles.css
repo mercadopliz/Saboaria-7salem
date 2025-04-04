@@ -294,3 +294,7 @@ section {
         font-size: 12px;
     }
 }
+
+.contato a{
+    color: #1b5e20;
+}
