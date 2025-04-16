@@ -47,3 +47,46 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+    const menuToggle = document.querySelector(".menu-toggle");
+    const navLinks = document.querySelector("nav ul");
+
+    menuToggle.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+    });
+}
+
+);
+
+document.addEventListener("DOMContentLoaded", () => {
+    const hamburger = document.querySelector(".hamburger");
+    const navLinks = document.querySelector(".nav-links");
+
+    // Adiciona um evento de clique ao ícone hambúrguer
+    hamburger.addEventListener("click", () => {
+        navLinks.classList.toggle("active"); // Mostra ou esconde o menu
+        hamburger.classList.toggle("open"); // Anima o ícone hambúrguer
+    });
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+    const sections = document.querySelectorAll("section");
+
+    const observer = new IntersectionObserver(
+        (entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("show");
+                } else {
+                    entry.target.classList.remove("show");
+                }
+            });
+        },
+        { threshold: 0.1 }
+    );
+
+    sections.forEach((section) => {
+        observer.observe(section);
+    });
+});
